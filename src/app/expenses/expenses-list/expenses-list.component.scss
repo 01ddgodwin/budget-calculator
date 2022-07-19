@@ -1,0 +1,9 @@
+.expenseItem {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.expenseItem:first-child {
+    display: none;
+}

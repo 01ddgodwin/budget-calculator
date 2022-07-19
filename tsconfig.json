@@ -10,6 +10,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -20,7 +21,10 @@
     "module": "es2020",
     "lib": [
       "es2020",
-      "dom"
+      "es5",
+      "es6",
+      "dom",
+      "dom.iterable"
     ]
   },
   "angularCompilerOptions": {

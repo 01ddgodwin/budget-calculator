@@ -1,0 +1,32 @@
+<div class="expensesContainer">
+  <div class="incomes box">
+    <fieldset [ngClass]="{negative: incomeSum < 0, positive: incomeSum > 0}" class="incomeTotal" id="incomeTotal">
+      <legend>Expenses</legend>
+      <h1 >${{ incomeSum }}</h1>
+    </fieldset>
+    <!-- <form class="incomeInput" #fi="ngForm" (ngSubmit)="onSubmit(fi)"  id="addExpense"> -->
+    <form class="incomeInput" id="addExpense">
+      <input type="number" class="itemAmount input is-info" placeholder="Amount" name="amount"
+         required #amount id="amount">
+      <input type="text" class="input is-info" placeholder="Description" name="description"
+        [ngModel]="expenses?.description" #description id="description">
+      <div class="control select is-info">
+        <select name="category" id="category" [ngModel]="expenses?.category" #category required>
+          <option value="" selected disabled>Category</option>
+          <option value="Bill">Bill</option>
+          <option value="Groceries">Groceries</option>
+          <option value="Savings">Savings</option>
+          <option value="Transportation">Transportation</option>
+          <option value="Restaurant">Restaurant</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Income">Income</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <button type="submit" class="button is-success is-light" (click)="onSendExpense()">Add</button>
+    </form>
+
+    <app-expenses-list class="incomeList"></app-expenses-list>
+
+  </div>
+</div>

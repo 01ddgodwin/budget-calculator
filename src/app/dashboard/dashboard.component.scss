@@ -1,0 +1,63 @@
+.dashboardContainer {
+    display: flex;
+    height: 100%;
+  }
+  
+  .leftSection {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  
+    .moneyLeft {
+      width: 75%;
+      height: 40%;
+      border: 2px black solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 2em;
+    }
+  
+    .categorySummary {
+      width: 75%;
+      height: 40%;
+      border: 2px black solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 2em;
+    }
+  }
+  
+  .rightSection {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+  
+    .budgets {
+      width: 75%;
+      border: 2px black solid;
+      margin: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      div {
+          margin: .5em 0;
+      }
+    }
+  }
+  
+  legend {
+      margin-left: 1.5em;
+  }
+  
+  fieldset {
+      border-radius: 8px;
+  }
+  

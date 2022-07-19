@@ -1,0 +1,116 @@
+@import '../../styles.scss';
+
+.negative {
+  border: 0px solid red !important;
+  background-color: #FEECF0;
+  color: #CC0F35;
+}
+
+.positive {
+  border: 0px solid green !important;
+  background-color: #EFFAF5;
+  color: #2B7953;
+}
+
+.expensesContainer {
+    display: flex;
+    justify-content: space-around;
+  
+    .incomes {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 2em;
+      flex-direction: column;
+      align-items: center;
+  
+      .incomeTotal {
+        width: 75%;
+        border: 2px solid black;
+        text-align: center;
+
+        legend {
+          font-size: 3em;
+        }
+
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+  
+      .incomeInput {
+        margin: 1.5em 0;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+  
+        > * {
+          margin: 0 5px;
+        }
+  
+        .itemAmount {
+          width: 50%;
+        }
+  
+      }
+  
+      .incomeList {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    .expenses {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 2em;
+      flex-direction: column;
+      align-items: center;
+  
+      .expenseTotal {
+        width: 75%;
+        border: 2px solid black;
+        text-align: center;
+      }
+  
+      .expenseInput {
+        margin: 1.5em 0;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+  
+        > * {
+          margin: 0px 5px;
+        }
+  
+        .itemAmount {
+          width: 40%;
+        }
+      }
+  
+      .expenseList {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  
+  fieldset {
+    border-radius: 8px;
+  }
+  
+  input,
+  select,
+  button {
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,22 @@
+<form class="incomeEdit" id="editExpense" #f="ngForm" (ngSubmit)="onUpdate(f)">
+    <hr>
+    <input type="number" class="itemAmount input is-info" placeholder="Amount" name="amount"
+       required #editAmount id="amount" [ngModel]="expense?.amount">
+    <input type="text" class="itemDescription input is-info" placeholder="Description" name="description"
+       #description id="description" [ngModel]="expense?.description">
+    <div class="itemCategory control select is-info">
+      <select name="category" id="category" [ngModel]="expense?.category" #category required>
+        <option value="" selected disabled>Category</option>
+        <option value="Bill">Bill</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Savings">Savings</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Restaurant">Restaurant</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Income">Income</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <button type="submit" class="button is-success is-light">Update</button>
+    <button type="button" class="button is-danger is-light" (click)="onCancel()">Cancel</button>
+  </form>

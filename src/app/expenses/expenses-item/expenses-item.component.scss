@@ -1,0 +1,16 @@
+.expenseItem {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+  
+    div,
+    button {
+      display: flex;
+      align-items: center;
+      margin: 0 1em;
+    }
+  }
+  

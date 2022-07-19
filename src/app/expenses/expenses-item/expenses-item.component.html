@@ -1,0 +1,13 @@
+<div class="expenseItem box">
+  <div class="expenseItemDetails">
+    <div>${{ expense?.amount }}</div>
+    <div>{{ expense?.description }}</div>
+    <div>{{ expense?.category }}</div>
+    <button class="button is-info is-light" (click)="onEditItem(expense)">EDIT</button>
+    <button class="button is-danger is-light" (click)="onDeleteItem(expense)">DELETE</button>
+  </div>
+
+  <div class="expenseItemEdit">
+    <app-expenses-edit *ngIf="display"></app-expenses-edit>
+  </div>
+</div>

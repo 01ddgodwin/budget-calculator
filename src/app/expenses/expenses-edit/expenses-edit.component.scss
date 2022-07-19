@@ -1,0 +1,31 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+
+    hr {
+        width: 75%;
+        height: 2px;
+        background-color: lightgray;
+    }
+
+    .itemAmount {
+        width: 25%;
+        margin: 0 5px;
+    }
+
+    .itemDescription {
+        width: 25%;
+        margin: 0 5px;
+    }
+
+    .itemCategory {
+        width: 30%;
+        margin: 0 5px;
+    }
+    
+    .button {
+        margin: 10px 5px;
+    }
+}
