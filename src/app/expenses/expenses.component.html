@@ -2,7 +2,7 @@
   <div class="incomes box">
     <fieldset [ngClass]="{negative: incomeSum < 0, positive: incomeSum > 0}" class="incomeTotal" id="incomeTotal">
       <legend>Expenses</legend>
-      <h1 >${{ incomeSum }}</h1>
+      <h1>${{ incomeSum }}</h1>
     </fieldset>
     <!-- <form class="incomeInput" #fi="ngForm" (ngSubmit)="onSubmit(fi)"  id="addExpense"> -->
     <form class="incomeInput" id="addExpense">

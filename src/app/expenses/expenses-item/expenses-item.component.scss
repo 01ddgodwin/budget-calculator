@@ -5,12 +5,14 @@
     cursor: pointer;
     width: 100%;
     justify-content: center;
+    border: .1px black solid;
   
     div,
     button {
       display: flex;
       align-items: center;
       margin: 0 1em;
+      justify-content: center;
     }
   }
   

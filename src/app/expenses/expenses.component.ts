@@ -17,6 +17,7 @@ export class ExpensesComponent implements OnInit {
   @ViewChild('category') categoryInputRef!: ElementRef;
 
   originalExpenses!: Expenses;
+  totalAmount!: totalAmount[];
   expenses!: Expenses;
   editMode: boolean = false;
 
@@ -25,7 +26,6 @@ export class ExpensesComponent implements OnInit {
   incomeSum: number = 0;
 
   incomeTotal = document.getElementById('incomeTotal')
-  
 
   constructor(
     private expensesService: ExpensesService,
@@ -50,7 +50,7 @@ export class ExpensesComponent implements OnInit {
       this.editMode = true;
       this.expenses = JSON.parse(JSON.stringify(this.originalExpenses))
 
-    })
+    });
 
   }
 
@@ -115,5 +115,7 @@ export class ExpensesComponent implements OnInit {
     this.descriptionInputRef.nativeElement.value = '';
     this.categoryInputRef.nativeElement.value = '';
   }
+
+  
 
 }
