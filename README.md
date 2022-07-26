@@ -1,6 +1,6 @@
 # BudgetCalculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This is a project that I did for my Full Stack Web Development class. It is a budget calculator to help you track expenses. It uses Angular and Typescript and is connected to firebase. It isn't all the way finished yet, there are still some improvements I need to add.
 
 ## Development server
 
